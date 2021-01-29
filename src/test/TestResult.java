@@ -4,11 +4,16 @@ import domain.Exercise;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
+/**Fill an array of arbitrary numbers
+ * 
+ * @author Taras
+ */
 public class TestResult {
 
     public static void main(String[] args) {
-
+/**
+ * create variables and array
+ */
         System.out.println("¬вед≥ть к≥льк≥сть елемент≥в масиву");
         int k = inputVal('k');
         int[]a = new int[k];
@@ -16,7 +21,9 @@ public class TestResult {
         a[i] = 0;
 
 
-
+/**
+ * do operations with massive
+ */
         for ( i = k/2+1, j = 1, c = k/2-1;c >= 0; i++ , j++ , c-- ) {
             a[i] = j;
             a[c] = j;
